@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kevin C. Brown Certificates</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="gallery">
+      <h1>Kevin C. Brown Certificates</h1>
+      <div class="thumbnails">
+        <div class="thumbnail-item">
+          <img
+            src="/images/LinkedInReactImage_Thumbnail.png"
+            alt="Certification 1"
+            onclick="openImage('/images/LinkedInReactImage.png')"
+          />
+          <p>LinkedIn React Certificate</p>
+        </div>
+        <div class="thumbnail-item">
+          <img
+            src="/images/MetaCertImage_Thumbnail.png"
+            alt="Meta Frontend Certificate"
+            onclick="openImage('/images/MetaCertImage.png')"
+          />
+          <p>Meta Frontend Development Certificate</p>
+        </div>
+        <!-- <div class="thumbnail-item">
+          <img
+            src="cert3-thumbnail.jpg"
+            alt="Certification 3"
+            onclick="openImage('cert3.jpg')"
+          />
+          <p>Certification Title 3</p>
+        </div> -->
+        <!-- Add more items as needed -->
+      </div>
+    </div>
+    <!-- Modal for full-size images -->
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeImage()">&times;</span>
+      <img id="modalImage" class="modal-content" />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
